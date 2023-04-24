@@ -1,9 +1,9 @@
+import { CurrencyDollar, MapPin, Timer } from 'phosphor-react'
 import { useTheme } from 'styled-components'
 
 import { Container, Content } from './styles'
 
 import successImg from '../../assets/success.svg'
-import { CurrencyDollar, MapPin, Timer } from 'phosphor-react'
 
 export function Success() {
   const theme = useTheme()

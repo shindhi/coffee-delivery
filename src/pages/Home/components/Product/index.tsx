@@ -2,15 +2,8 @@ import { ShoppingCartSimple, Plus, Minus } from 'phosphor-react'
 
 import { useTheme } from 'styled-components'
 
-import {
-  Item,
-  Tags,
-  InfoItem,
-  Buy,
-  Price,
-  SelectQuantity,
-  ButtonCart,
-} from './styles'
+import { Item, Tags, InfoItem, Buy, Price, ButtonCart } from './styles'
+import { SelectQuantity } from '../../../../components/SelectQuantity'
 
 interface Props {
   item: {
@@ -49,15 +42,7 @@ export function Product({ item }: Props) {
         </Price>
 
         <div>
-          <SelectQuantity>
-            <button>
-              <Minus size={14} weight="bold" />
-            </button>
-            <span>10</span>
-            <button>
-              <Plus size={14} weight="bold" />
-            </button>
-          </SelectQuantity>
+          <SelectQuantity />
 
           <ButtonCart>
             <ShoppingCartSimple weight="fill" size={22} color={theme.white} />
